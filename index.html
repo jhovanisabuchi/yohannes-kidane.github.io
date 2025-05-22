@@ -8,7 +8,7 @@
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
-      background: #0f2027; /* Dark Blue Gradient Start */
+      background: #0f2027;
       background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
       color: #fff;
       line-height: 1.6;
@@ -23,8 +23,8 @@
     }
 
     header img.profile-pic {
-      width: 200px;
-      height: 200px;
+      width: 140px;
+      height: 140px;
       border-radius: 50%;
       object-fit: cover;
       border: 4px solid #ffffffcc;
@@ -53,6 +53,20 @@
       border-bottom: 2px solid #4fc3f7;
       padding-bottom: 8px;
       margin-bottom: 25px;
+    }
+
+    .quick-about, .about-me {
+      background: rgba(255, 255, 255, 0.08);
+      padding: 30px;
+      border-radius: 10px;
+      margin-bottom: 30px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+
+    .projects-section {
+      background: #1a1a2e;
+      padding: 50px 20px;
+      border-radius: 12px;
     }
 
     .project {
@@ -109,37 +123,47 @@
     <p>Data Scientist | Machine Learning | NLP | AI Enthusiast</p>
   </header>
 
-  <div class="section">
+  <div class="section quick-about">
+    <h2>👋 About My Work</h2>
+    <p>I’m a Data Scientist with a passion for turning messy data into clear insights. I build smart models that solve real-world problems in AI, NLP, and predictive analytics.</p>
+  </div>
+
+  <div class="section about-me">
+    <h2>🧍 About Me</h2>
+    <p>I’m Yohannes Kidane, based in [Your Location]. I love building machine learning solutions that are practical and impactful. Outside of work, I enjoy learning new tech, reading, and biking.</p>
+  </div>
+
+  <div class="section projects-section">
     <h2>🧠 Projects</h2>
 
     <div class="project">
       <img src="sentiment-classifier.jpg" alt="Sentiment Analysis Project">
       <h3>🎬 Sentiment Classifier — IMDb Movie Reviews</h3>
-      <p>Fine-tuned Distil BERT on IMDb data to classify reviews as positive or negative with over 90% accuracy; handled preprocessing, tokenization, training, and evaluation. <code>DistilBERT</code>... </p>
+      <p>Fine-tuned Distil BERT on IMDb data to classify reviews as positive or negative with over 90% accuracy; handled preprocessing, tokenization, training, and evaluation.</p>
     </div>
 
     <div class="project">
       <img src="flavalingo.jpg" alt="FlavaLingo Project">
       <h3>🧪 FlavaLingo — Multilingual Recipe Generation with AI</h3>
-      <p>Developed an AI-powered system that takes ingredients in any language and generates recipes in the same language using NLLB for translation and T5 for recipe creation. <code>facebook/nllb-200</code> for translation... </p>
+      <p>Developed an AI-powered system that takes ingredients in any language and generates recipes in the same language using NLLB for translation and T5 for recipe creation.</p>
     </div>
 
     <div class="project">
       <img src="customer-segmentation.jpg" alt="Customer Segmentation Project">
       <h3>📊 Customer Segmentation — Food Delivery Platform</h3>
-      <p>Used K-Means and DBSCAN to cluster customer behavior from grocery and food ordering data, revealing segments that improved targeting accuracy by 25% <code>K-Means</code>... </p>
+      <p>Used K-Means and DBSCAN to cluster customer behavior from grocery and food ordering data, revealing segments that improved targeting accuracy by 25%.</p>
     </div>
 
     <div class="project">
       <img src="real-estate.jpg" alt="Real Estate Modeling Project">
       <h3>🏠 Real Estate Price Modeling</h3>
-      <p>Built and compared decision tree, random forest, and deep learning models to predict house prices based on features like location, lot size, and number of stories. </p>
+      <p>Built and compared decision tree, random forest, and deep learning models to predict house prices based on features like location, lot size, and number of stories.</p>
     </div>
 
     <div class="project">
       <img src="bike-sharing.jpg" alt="Bike Sharing Analytics Project">
       <h3>🚲 Bike Sharing Demand & Business Proximity Analytics</h3>
-      <p>Built statistical models to explore relationships between bike availability and nearby business ratings, uncovering location-based trends that improved prediction accuracy by 20%. </p>
+      <p>Built statistical models to explore relationships between bike availability and nearby business ratings, uncovering location-based trends that improved prediction accuracy by 20%.</p>
     </div>
   </div>
 
