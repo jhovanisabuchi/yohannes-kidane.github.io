@@ -8,17 +8,18 @@
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
-      background: #cce7ff;
-      color: #222;
+      background: #0f2027; /* Dark Blue Gradient Start */
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: #fff;
       line-height: 1.6;
     }
 
     header {
       text-align: center;
       padding: 40px 20px;
-      background: #ffffffdd;
-      backdrop-filter: blur(4px);
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(6px);
+      box-shadow: 0 2px 6px rgba(0,0,0,0.4);
     }
 
     header img.profile-pic {
@@ -26,18 +27,18 @@
       height: 140px;
       border-radius: 50%;
       object-fit: cover;
-      border: 4px solid #2980b9;
+      border: 4px solid #ffffffcc;
       margin-bottom: 20px;
     }
 
     h1 {
       margin: 0;
       font-size: 2.5em;
-      color: #2c3e50;
+      color: #fff;
     }
 
     a {
-      color: #0077cc;
+      color: #4fc3f7;
       text-decoration: none;
     }
 
@@ -48,17 +49,17 @@
     }
 
     h2 {
-      color: #1e3d59;
-      border-bottom: 2px solid #2980b9;
+      color: #fff;
+      border-bottom: 2px solid #4fc3f7;
       padding-bottom: 8px;
       margin-bottom: 25px;
     }
 
     .project {
-      background: white;
+      background: rgba(255, 255, 255, 0.1);
       padding: 25px;
       border-radius: 12px;
-      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.3);
       transition: transform 0.3s, box-shadow 0.3s;
       margin-bottom: 30px;
       position: relative;
@@ -66,7 +67,13 @@
 
     .project:hover {
       transform: translateY(-6px);
-      box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+      box-shadow: 0 12px 25px rgba(0,0,0,0.4);
+    }
+
+    .project img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 15px;
     }
 
     .skills ul {
@@ -87,14 +94,14 @@
     .background-images img {
       width: 45%;
       border-radius: 10px;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.4);
     }
   </style>
 </head>
 <body>
 
   <header>
-    <img src="/mnt/data/68fe209a-85a5-4d13-b799-2b834ed0ffb5.jpg" alt="Yohannes K. Shim" class="profile-pic" />
+    <img src="your-profile.jpg" alt="Yohannes K. Shim" class="profile-pic" />
     <h1>Yohannes K. Shim</h1>
     <p>📫 <a href="mailto:jhovanisabuchi@gmail.com">jhovanisabuchi@gmail.com</a> | 
        💼 <a href="https://www.linkedin.com/in/yohanneskshim" target="_blank">LinkedIn</a> | 
@@ -106,28 +113,33 @@
     <h2>🧠 Projects</h2>
 
     <div class="project">
+      <img src="sentiment-classifier.jpg" alt="Sentiment Analysis Project">
       <h3>🎬 Sentiment Classifier — IMDb Movie Reviews</h3>
-      <p>Developed a sentiment analysis pipeline leveraging Hugging Face’s <code>DistilBERT</code>. Performed tokenization, vectorization, and fine-tuning on 25k labeled reviews. Achieved <strong>90.2% test accuracy</strong>. Employed stratified train-test splitting and evaluated using confusion matrix, precision, recall, and F1-score. Deployed model via a REST API for inference.</p>
+      <p>Developed a sentiment analysis pipeline leveraging Hugging Face’s <code>DistilBERT</code>... </p>
     </div>
 
     <div class="project">
+      <img src="flavalingo.jpg" alt="FlavaLingo Project">
       <h3>🧪 FlavaLingo — Multilingual Recipe Generation with AI</h3>
-      <p>Engineered a multilingual NLP pipeline combining <code>facebook/nllb-200</code> for translation and <code>T5-recipe-generation</code> for conditional text generation. Fine-tuned models using <code>RecipeNLG</code> and <code>Recipe1M+</code>. Integrated vector-based recipe recommender using cosine similarity on TF-IDF features. Supports over 40 languages with automatic language detection and bi-directional translation.</p>
+      <p>Engineered a multilingual NLP pipeline combining <code>facebook/nllb-200</code> for translation... </p>
     </div>
 
     <div class="project">
+      <img src="customer-segmentation.jpg" alt="Customer Segmentation Project">
       <h3>📊 Customer Segmentation — Food Delivery Platform</h3>
-      <p>Performed unsupervised learning on transactional and behavioral data using <code>K-Means</code> and <code>DBSCAN</code>. Applied PCA for dimensionality reduction. Identified high-value customer clusters and churn-risk segments. Insights informed targeted marketing strategies, increasing campaign ROI by <strong>~25%</strong>. Visualized clusters using Plotly and Seaborn.</p>
+      <p>Performed unsupervised learning on transactional and behavioral data using <code>K-Means</code>... </p>
     </div>
 
     <div class="project">
+      <img src="real-estate.jpg" alt="Real Estate Modeling Project">
       <h3>🏠 Real Estate Price Modeling</h3>
-      <p>Built regression models (Linear, Decision Tree, Random Forest, MLP) to predict housing prices using features like lot size, bath count, location encoding, and garage size. Applied feature selection via permutation importance and SHAP. Achieved <strong>R² = 0.91</strong> on the hold-out set. Visualized model comparisons and residuals. Used grid search for hyperparameter tuning.</p>
+      <p>Built regression models (Linear, Decision Tree, Random Forest, MLP) to predict housing prices... </p>
     </div>
 
     <div class="project">
+      <img src="bike-sharing.jpg" alt="Bike Sharing Analytics Project">
       <h3>🚲 Bike Sharing Demand & Business Proximity Analytics</h3>
-      <p>Correlated city bike station usage with Yelp-rated business density and proximity using multivariate regression. Engineered features: <code>empty_slots</code>, <code>free_bikes</code>, <code>business_rating</code>, and <code>business_distance</code>. Conducted EDA, correlation heatmaps, and feature importance analysis. Provided actionable insights for city mobility planners and business investors.</p>
+      <p>Correlated city bike station usage with Yelp-rated business density and proximity... </p>
     </div>
   </div>
 
@@ -143,8 +155,8 @@
   </div>
 
   <div class="section background-images">
-    <img src="/mnt/data/465219ac-f404-4cf8-b22a-380601711076.jpg" alt="AI Visualization">
-    <img src="/mnt/data/68fe209a-85a5-4d13-b799-2b834ed0ffb5.jpg" alt="Programming Flow">
+    <img src="ai-visualization.jpg" alt="AI Visualization">
+    <img src="programming-flow.jpg" alt="Programming Flow">
   </div>
 
 </body>
