@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Yohannes K. Shim — Data Scientist</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      background: #cce7ff;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    header {
+      text-align: center;
+      padding: 40px 20px;
+      background: #ffffffdd;
+      backdrop-filter: blur(4px);
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    header img.profile-pic {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #2980b9;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 2.5em;
+      color: #2c3e50;
+    }
+
+    a {
+      color: #0077cc;
+      text-decoration: none;
+    }
+
+    .section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      color: #1e3d59;
+      border-bottom: 2px solid #2980b9;
+      padding-bottom: 8px;
+      margin-bottom: 25px;
+    }
+
+    .project {
+      background: white;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+      margin-bottom: 30px;
+      position: relative;
+    }
+
+    .project:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+    }
+
+    .skills ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .skills li {
+      padding: 5px 0;
+    }
+
+    .background-images {
+      display: flex;
+      justify-content: space-around;
+      margin: 40px 0;
+    }
+
+    .background-images img {
+      width: 45%;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="/mnt/data/68fe209a-85a5-4d13-b799-2b834ed0ffb5.jpg" alt="Yohannes K. Shim" class="profile-pic" />
+    <h1>Yohannes K. Shim</h1>
+    <p>📫 <a href="mailto:jhovanisabuchi@gmail.com">jhovanisabuchi@gmail.com</a> | 
+       💼 <a href="https://www.linkedin.com/in/yohanneskshim" target="_blank">LinkedIn</a> | 
+       💻 <a href="https://github.com/jhovanisabuchi" target="_blank">GitHub</a></p>
+    <p>Junior Data Scientist | Machine Learning | NLP | AI Enthusiast</p>
+  </header>
+
+  <div class="section">
+    <h2>🧠 Projects</h2>
+
+    <div class="project">
+      <h3>🎬 Sentiment Classifier — IMDb Movie Reviews</h3>
+      <p>Developed a sentiment analysis pipeline leveraging Hugging Face’s <code>DistilBERT</code>. Performed tokenization, vectorization, and fine-tuning on 25k labeled reviews. Achieved <strong>90.2% test accuracy</strong>. Employed stratified train-test splitting and evaluated using confusion matrix, precision, recall, and F1-score. Deployed model via a REST API for inference.</p>
+    </div>
+
+    <div class="project">
+      <h3>🧪 FlavaLingo — Multilingual Recipe Generation with AI</h3>
+      <p>Engineered a multilingual NLP pipeline combining <code>facebook/nllb-200</code> for translation and <code>T5-recipe-generation</code> for conditional text generation. Fine-tuned models using <code>RecipeNLG</code> and <code>Recipe1M+</code>. Integrated vector-based recipe recommender using cosine similarity on TF-IDF features. Supports over 40 languages with automatic language detection and bi-directional translation.</p>
+    </div>
+
+    <div class="project">
+      <h3>📊 Customer Segmentation — Food Delivery Platform</h3>
+      <p>Performed unsupervised learning on transactional and behavioral data using <code>K-Means</code> and <code>DBSCAN</code>. Applied PCA for dimensionality reduction. Identified high-value customer clusters and churn-risk segments. Insights informed targeted marketing strategies, increasing campaign ROI by <strong>~25%</strong>. Visualized clusters using Plotly and Seaborn.</p>
+    </div>
+
+    <div class="project">
+      <h3>🏠 Real Estate Price Modeling</h3>
+      <p>Built regression models (Linear, Decision Tree, Random Forest, MLP) to predict housing prices using features like lot size, bath count, location encoding, and garage size. Applied feature selection via permutation importance and SHAP. Achieved <strong>R² = 0.91</strong> on the hold-out set. Visualized model comparisons and residuals. Used grid search for hyperparameter tuning.</p>
+    </div>
+
+    <div class="project">
+      <h3>🚲 Bike Sharing Demand & Business Proximity Analytics</h3>
+      <p>Correlated city bike station usage with Yelp-rated business density and proximity using multivariate regression. Engineered features: <code>empty_slots</code>, <code>free_bikes</code>, <code>business_rating</code>, and <code>business_distance</code>. Conducted EDA, correlation heatmaps, and feature importance analysis. Provided actionable insights for city mobility planners and business investors.</p>
+    </div>
+  </div>
+
+  <div class="section skills">
+    <h2>⚙️ Skills</h2>
+    <ul>
+      <li>Programming: Python, Pandas, NumPy, Scikit-learn</li>
+      <li>AI Tools: Hugging Face Transformers, NLTK, SpaCy</li>
+      <li>Unsupervised ML: K-Means, DBSCAN, PCA</li>
+      <li>Visualization: Plotly, Power BI, Tableau</li>
+      <li>Web & DevOps: Git, GitHub, GitHub Pages</li>
+    </ul>
+  </div>
+
+  <div class="section background-images">
+    <img src="/mnt/data/465219ac-f404-4cf8-b22a-380601711076.jpg" alt="AI Visualization">
+    <img src="/mnt/data/68fe209a-85a5-4d13-b799-2b834ed0ffb5.jpg" alt="Programming Flow">
+  </div>
+
+</body>
+</html>
