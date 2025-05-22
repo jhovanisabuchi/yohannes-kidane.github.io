@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Portfolio of Yohannes Kidane, a data scientist and machine learning engineer focused on AI, NLP, and predictive analytics." />
   <title>Yohannes Kidane — Data Scientist</title>
   <style>
     body {
@@ -23,8 +24,8 @@
     }
 
     header img.profile-pic {
-      width: 140px;
-      height: 140px;
+      width: 250px;
+      height: 250px;
       border-radius: 50%;
       object-fit: cover;
       border: 4px solid #ffffffcc;
@@ -76,7 +77,6 @@
       box-shadow: 0 10px 20px rgba(0,0,0,0.3);
       transition: transform 0.3s, box-shadow 0.3s;
       margin-bottom: 30px;
-      position: relative;
     }
 
     .project:hover {
@@ -103,6 +103,8 @@
       display: flex;
       justify-content: space-around;
       margin: 40px 0;
+      flex-wrap: wrap;
+      gap: 20px;
     }
 
     .background-images img {
@@ -110,60 +112,71 @@
       border-radius: 10px;
       box-shadow: 0 5px 15px rgba(0,0,0,0.4);
     }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      background-color: rgba(255, 255, 255, 0.05);
+      font-size: 0.9em;
+      color: #aaa;
+    }
   </style>
 </head>
 <body>
 
   <header>
-    <img src="profile.jpg" alt="Yohannes K. Shim" class="profile-pic" />
-    <h1>Yohannes K. Shim</h1>
-    <p>📫 <a href="mailto:jhovanisabuchi@gmail.com">jhovanisabuchi@gmail.com</a> | 
-       💼 <a href="https://www.linkedin.com/in/yohanneskshim" target="_blank">LinkedIn</a> | 
-       💻 <a href="https://github.com/jhovanisabuchi" target="_blank">GitHub</a></p>
-    <p>Data Scientist | Machine Learning | NLP | AI Enthusiast</p>
+    <img src="profile.jpg" alt="Yohannes Kidane profile picture" class="profile-pic" />
+    <h1>Yohannes Kidane</h1>
+    <p>📫 <a href="mailto:jhovanisabuchi@gmail.com" aria-label="Email Yohannes">jhovanisabuchi@gmail.com</a> | 
+       💼 <a href="https://www.linkedin.com/in/yohanneskshim" target="_blank" aria-label="Yohannes LinkedIn profile">LinkedIn</a> | 
+       💻 <a href="https://github.com/jhovanisabuchi" target="_blank" aria-label="Yohannes GitHub profile">GitHub</a></p>
+    <p>Data Scientist & Machine Learning Engineer</p>
   </header>
-
-  <div class="section quick-about">
-    <h2>👋 About My Work</h2>
-    <p>I’m a Data Scientist with a passion for turning messy data into clear insights. I build smart models that solve real-world problems in AI, NLP, and predictive analytics.</p>
-  </div>
 
   <div class="section about-me">
     <h2>🧍 About Me</h2>
-    <p>I’m Yohannes Kidane, based in [Your Location]. I love building machine learning solutions that are practical and impactful. Outside of work, I enjoy learning new tech, reading, and biking.</p>
+    <p>“The best way to predict the future is to create it.” – Abraham Lincoln</p>
+    <p>With a solid foundation in agriculture and computer science, I bring a unique perspective that blends domain knowledge with technical expertise. My studies in agriculture helped me understand real-world systems and sustainability, while my computer science training equipped me with the tools to analyze and solve problems logically.</p>
+    <p>I completed a Data Science Diploma at Lighthouse Labs, where I worked hands-on with Python, Scikit-learn, SQL, and machine learning models. This journey has shown me how data can be used to build AI tools that improve lives—from predicting outcomes to generating multilingual recipes or understanding human sentiment.</p>
+    <p>Today, I apply these skills to solve real-world problems, especially where machine learning and domain expertise come together. I'm passionate about building data-driven applications that generate impact and innovation.</p>
+  </div>
+
+  <div class="section quick-about">
+    <h2>📈 Quick About Me</h2>
+    <p>I use data science to build smart AI-powered systems—from classifying movie sentiments with BERT to generating recipes in multiple languages. With each project, I turn messy data into models that generate real value and intelligent content. My focus is on AI generation, NLP, and predictive analytics that are not just functional, but impactful.</p>
   </div>
 
   <div class="section projects-section">
     <h2>🧠 Projects</h2>
 
     <div class="project">
-      <img src="sentiment-classifier.jpg" alt="Sentiment Analysis Project">
+      <img src="datasciencef.jpg" alt="Sentiment Classifier project screenshot">
       <h3>🎬 Sentiment Classifier — IMDb Movie Reviews</h3>
-      <p>Fine-tuned Distil BERT on IMDb data to classify reviews as positive or negative with over 90% accuracy; handled preprocessing, tokenization, training, and evaluation.</p>
+      <p>Fine-tuned DistilBERT on IMDb data to classify reviews as positive or negative with over 90% accuracy. Managed full pipeline: preprocessing, tokenization, model training, and evaluation.</p>
     </div>
 
     <div class="project">
-      <img src="flavalingo.jpg" alt="FlavaLingo Project">
+      <img src="screenshot_2.png" alt="FlavaLingo project screenshot">
       <h3>🧪 FlavaLingo — Multilingual Recipe Generation with AI</h3>
-      <p>Developed an AI-powered system that takes ingredients in any language and generates recipes in the same language using NLLB for translation and T5 for recipe creation.</p>
+      <p>Developed an AI-powered app that takes ingredients in any language and generates a recipe in the same language using NLLB for translation and T5 for generation.</p>
     </div>
 
     <div class="project">
-      <img src="customer-segmentation.jpg" alt="Customer Segmentation Project">
+      <img src="datascienceee.jpg" alt="Customer Segmentation project screenshot">
       <h3>📊 Customer Segmentation — Food Delivery Platform</h3>
-      <p>Used K-Means and DBSCAN to cluster customer behavior from grocery and food ordering data, revealing segments that improved targeting accuracy by 25%.</p>
+      <p>Clustered customer behavior using K-Means and DBSCAN on food and grocery data, improving personalized targeting by 25%.</p>
     </div>
 
     <div class="project">
-      <img src="real-estate.jpg" alt="Real Estate Modeling Project">
+      <img src="real-estate.jpg" alt="Real Estate Price Modeling project screenshot">
       <h3>🏠 Real Estate Price Modeling</h3>
-      <p>Built and compared decision tree, random forest, and deep learning models to predict house prices based on features like location, lot size, and number of stories.</p>
+      <p>Built and compared decision tree, random forest, and deep learning models to predict home prices using structured features like location, lot size, and stories.</p>
     </div>
 
     <div class="project">
-      <img src="bike-sharing.jpg" alt="Bike Sharing Analytics Project">
+      <img src="bike-sharing.jpg" alt="Bike Sharing project screenshot">
       <h3>🚲 Bike Sharing Demand & Business Proximity Analytics</h3>
-      <p>Built statistical models to explore relationships between bike availability and nearby business ratings, uncovering location-based trends that improved prediction accuracy by 20%.</p>
+      <p>Analyzed bike station usage and surrounding business ratings, uncovering correlations that improved station-level predictions by 20%.</p>
     </div>
   </div>
 
@@ -179,9 +192,13 @@
   </div>
 
   <div class="section background-images">
-    <img src="ai-visualization.jpg" alt="AI Visualization">
-    <img src="programming-flow.jpg" alt="Programming Flow">
+    <img src="ai-visualization.jpg" alt="AI Visualization graphic">
+    <img src="programming-flow.jpg" alt="Programming and workflow graphic">
   </div>
+
+  <footer>
+    <p>© <script>document.write(new Date().getFullYear())</script> Yohannes Kidane — Built with HTML & passion for AI</p>
+  </footer>
 
 </body>
 </html>
