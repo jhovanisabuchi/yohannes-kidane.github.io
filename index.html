@@ -64,12 +64,55 @@
     }
 
     .quick-about, .about-me {
-      background: rgba(255, 255, 255, 0.08);
-      padding: 30px;
-      border-radius: 10px;
-      margin-bottom: 30px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-    }
+  position: relative;
+  background-image: url('your-picture.jpg'); /* your image */
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Overlay box with some transparency */
+.overlay-content {
+  background-color: rgba(0, 0, 0, 0.5); /* semi-transparent black */
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 600px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .about-me {
+    height: 300px;
+    padding: 15px;
+  }
+
+  .overlay-content {
+    padding: 15px;
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-me {
+    height: 250px;
+    padding: 10px;
+  }
+
+  .overlay-content {
+    padding: 10px;
+    max-width: 95%;
+    font-size: 0.9em; /* smaller text on small screens */
+  }
+}
+
 
     .projects-section {
       background: #1a1a2e;
