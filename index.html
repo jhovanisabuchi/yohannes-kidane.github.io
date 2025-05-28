@@ -4,16 +4,53 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Yohannes Kidane — Data Scientist</title>
+  <head>
   <style>
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
-      background: #6414ae;
       background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
       color: #ffffff;
       line-height: 1.6;
+      overflow-x: hidden;
+      position: relative;
+      z-index: 1;
     }
 
+    #stars, #stars2, #stars3 {
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      display: block;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    #stars {
+      background: transparent url('https://raw.githubusercontent.com/jhovanisabuchi/starry-night/main/stars1.png') repeat;
+      animation: moveStars 50s linear infinite;
+    }
+
+    #stars2 {
+      background: transparent url('https://raw.githubusercontent.com/jhovanisabuchi/starry-night/main/stars2.png') repeat;
+      animation: moveStars 100s linear infinite;
+      opacity: 0.6;
+    }
+
+    #stars3 {
+      background: transparent url('https://raw.githubusercontent.com/jhovanisabuchi/starry-night/main/stars3.png') repeat;
+      animation: moveStars 150s linear infinite;
+      opacity: 0.3;
+    }
+
+    @keyframes moveStars {
+      from {
+        background-position: 0 0;
+      }
+      to {
+        background-position: -10000px 5000px;
+      }
+    }
+  
     header {
       text-align: center;
       padding: 40px 20px;
